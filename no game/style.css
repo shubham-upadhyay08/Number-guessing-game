@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff00cc, #333399);
+    color: rgb(251, 250, 250);
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    margin-top: 50px;
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 20px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+h1 {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {text-shadow: 0 0 10px #fff, 0 0 20px #ef0ad0;}
+    to {text-shadow: 0 0 20px #27c2c2, 0 0 40px #ff00de;}
+}
+
+input, select {
+    padding: 10px;
+    width: 180px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ff9800;
+    color: white;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: #c07821;
+    transform: scale(1.1);
+}
+
+.reset-btn {
+    margin-top: 10px;
+    background: #4caf50;
+}
+
+.reset-btn:hover {
+    background: #3c8d40;
+}
+
+.music-btn {
+    margin-top: 10px;
+    background: #008CBA;
+}
+
+.music-btn:hover {
+    background: #0073a8;
+}
+
+#timer, #turn, #score {
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+#leaderboard {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+}

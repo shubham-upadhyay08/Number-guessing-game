@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Ultimate Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎯 Ultimate Number Guessing Game</h1>
+        <p>1 se 20 ke beech ek number guess karo!</p>
+
+        <select id="level" onchange="setLevel()">
+            <option value="easy">⭐ Easy (30s)</option>
+            <option value="medium">⭐⭐ Medium (20s)</option>
+            <option value="hard">⭐⭐⭐ Hard (10s)</option>
+        </select>
+
+        <div id="timer">⏳ Time: 30s</div>
+        <div id="turn">🎮 Player 1 ka turn</div>
+        <div id="score">🏆 Player1: 0 | Player2: 0</div>
+
+        <input type="number" id="guess" placeholder="Apna guess likho" min="1" max="20">
+        <button onclick="checkGuess()">✅ Guess</button>
+        <p id="message"></p>
+
+        <button onclick="resetGame()" class="reset-btn">🔄 Reset Game</button>
+        <button onclick="toggleMusic()" class="music-btn">🎵 Music On/Off</button>
+
+        <h2>🏅 Leaderboard</h2>
+        <divid="leaderboard"></div>
+
+        <audio id="bg-music" loop autoplay>
+            <source src="assests/mp3 song.m4a" type="audio/mpeg">
+        </audio>
+    </div>
+                         
+    <script src="script.js"></script>
+</body>
+</html>
